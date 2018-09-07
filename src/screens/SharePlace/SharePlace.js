@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import {View, Text, TextInput, Button, StyleSheet, ScrollView, Image} from "react-native"
 import {connect} from "react-redux";
-import DefaultInput from "../../components/UI/DefaultInput/DefaultInput";
+import PlaceInput from "../../components/PlaceInput/PlaceInput";
 import MainText from "../../components/UI/MainText/MainText";
 import HeadingText from "../../components/UI/HeadingText/HeadingText";
 import imagePlaceHolder from "../../assets/lanta.jpg"
@@ -44,7 +44,7 @@ class SharePlaceScreen extends Component {
                     <View style={styles.button}>
                         <Button onPress={() => alert(1)} title="Set Location"/>
                     </View>
-                    <DefaultInput placeholder="Place name" />
+                    <PlaceInput />
                     <View style={styles.button}>
                         <Button title="Share the place" onPress={this.placeAddedHandler} />
                     </View>
