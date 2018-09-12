@@ -36,9 +36,6 @@ class FindPlaceScreen extends Component {
         })
     }
     placesSearchHandler = () => {
-        // this.setState({
-        //     placesLoaded: true
-        // })
         Animated.timing(this.state.removeAnim, {
             toValue: 0,
             duration: 500,
@@ -51,9 +48,6 @@ class FindPlaceScreen extends Component {
         });
     }
     placesLoadedHandler = () => {
-        // this.setState({
-        //     placesLoaded: true
-        // })
         Animated.timing(this.state.placesAnim, {
             toValue: 1,
             duration: 500,
